@@ -1,86 +1,67 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    overflow: auto;
-    color: rgb(0, 0, 0);
-    
 }
-body{
-    background-color: rgb(255, 255, 255);
+table{
+    border: 1px solid #127369;
+    padding: 0;
 }
-header{
-    /* background-color: #107373; */
-    color: #ffffff;
+td{
+    border: 1px solid #127369;
+    width: 200px;
+    height: 200px;
     text-align: center;
-    font-size: 70px;
-    padding: 50px;
-    /* opacity: 0.3; */
-    line-height: 150px;
-    /* text-shadow:  rgb(0, 0, 0) 0px 0px 1px; */
-        
-}
-li{
-    padding: 20px 40px;
-    /* background-color: #24BFBF; */
-    margin-right: 0px;
-    float: left;
+    font-size: 5rem;
     cursor: pointer;
-    font-size: 20px;
-    color: #0D0D0D;
-    /* opacity: 1; */
 }
-#ul{
-    /* background-color: #24BFBF; */
-    list-style-type: none;    
-    width: 100%;
-    /* opacity: 0.3; */
-    
+.wholeContainer{
+    display: inline-block;
+    border: 10px solid #10403b;    
+    text-align: center;
+    background-color: #8AA6A3;
+    color: #ffffff;
 }
-li:hover{
-    background-color: #000000;
-    border-radius: 10px;
-    color: white;
-}
-
-iframe{
-    width: 100%;
-    min-height: 500px;
-    border: 0;
-    
-}
-footer{
-    width: 100%;
-    height: 300px;
-    /* background-color: #107373; */
+.btn{
+    /* width: 100px;
+    height: 40px; */
+    padding: 10px 30px;
     font-size: 30px;
-    text-align: left;
-    line-height: 40px;
-    padding-top: 40px;
-    padding-left: 75px;
-    /* opacity: 0.3; */
-    
+    font-weight: 900;
+    margin-bottom: 20px;
+    background-color: #127369;
+    color: #bfbfbf;
+    border: 1px solid;
+    border-radius: 10px;
 }
-canvas{
+.btn:hover{
+    background-color: #10403b;
+    color: white;
+    padding: 10px 35px;
+    transition-duration: 100ms;
+}
+.winComment{
+    padding: 10px;
     position: absolute;
-    /* top: 10px; */
-    
-    background-color: #000000;
-    /* opacity: 0.5; */
-    /* width: 100%;
-    height: 100%; */
-    z-index: -1;
+    top: 30%;
+    left: 15%;
+    background-color: wheat;
+    border: 1px solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 3px rgb(245, 222, 179);
+    display: none;
 }
-span{
-    text-shadow: red 3 3 ;
+@media (max-width: 658px) {
+    td{
+        /* width: 0.3%; */
+        height: 150px;
+        
+    }
+    
 }
-#name{
-    color: white;
-    text-shadow: rgb(0, 0, 0) 0px 0px 10px ;
+@media (max-width: 320px) {
+    td{
+        /* width: 0.3%; */
+        height: 100px;
+        
+    }
     
-    
-}
-#welcome{
-    
-    color: white;
 }
